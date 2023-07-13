@@ -11,3 +11,17 @@ remote_state {
     encrypt = true
   }
 }
+
+terraform {
+  extra_arguments "lambda" {
+    commands = [
+      "apply",
+      "plan",
+    ]
+
+    env_vars = {
+      TF_VAR_test = "test321"
+    }
+  }
+
+}
