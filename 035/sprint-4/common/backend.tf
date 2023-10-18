@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     bucket  = "jstanislawczyk-terraform-state"
     encrypt = true
-    key     = "FirstService/terraform.tfstate"
+    key     = "common/terraform.tfstate"
     region  = "us-east-1"
   }
 }
